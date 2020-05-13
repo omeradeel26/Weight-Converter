@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1.0">
+        <title>Weight Converter</title>
+
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <script>
+            function convert(){
+                var pounds = parseInt(document.querySelector("#pounds").value);
+
+                document.querySelector("#kg").innerHTML = pounds/2.2;
+                document.querySelector("#grams").innerHTML = pounds*454.5454;
+                document.querySelector("#ounces").innerHTML = pounds*16;
+            }
+        </script>
+    
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="align">
+
+                <h1 id='title'>Weight Converter</h1>
+
+                <form>
+                    <input type="text" id="pounds" placeholder="Enter Pounds..." oninput="convert()" onchange="convert()">
+                </form>
+                <br>
+                Ounces: <div id="ounces">0</div>
+                <br> 
+                Grams: <div id="grams">0</div>
+                <br>
+                Kilograms: <div id="kg">0</div>
+            </div>
+
+        </div>
+    </body>
+
+</html>

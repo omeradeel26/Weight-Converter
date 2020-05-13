@@ -1,0 +1,41 @@
+.container {
+    position: absolute;
+    top:40%;
+    left:40%;
+    width: 20vw;
+    height:300px;
+    background-color: rgb(52, 74, 201);
+    border: 1px solid black;
+    display: inline;
+    border-radius:5px;
+    text-align: left;
+}
+
+.align {
+    margin-left: 1vw;
+    font-family: "calibri";
+}
+
+#pounds{
+    width: 95%;
+    height: 1.75vw;
+    font-size: 1vw;
+    font-family: "calibri";
+    border: 1px solid black;
+}
+
+#pounds:focus{
+    border: 1px solid lightcoral;
+}
+
+body {
+    background-color: #333;
+}
+
+#title {
+    font-family: 'Calibri';
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration:underline;
+}
